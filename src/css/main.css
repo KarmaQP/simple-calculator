@@ -78,16 +78,51 @@ h6 {
 }
 /*-------------------------------------------------------*/
 
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
 .container {
-  background-color: beige;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+  row-gap: 10px;
+  column-gap: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.308);
+  width: 380px;
+  margin-top: 100px;
+  padding: 20px;
 }
 
 .container__item {
-  background-color: aliceblue;
+  background-color: #f9f9f9;
   font-size: 40px;
-  width: 70px;
-  border: 1px solid black;
+  border: 1px solid #f0f0f0;
   text-align: center;
+  cursor: pointer;
+  font-size: 25px;
+  padding: 10px 0px;
+}
+
+.equal {
+  grid-column: 4 / 5;
+  grid-row: 3 / 7;
+  background-color: #4e8ffe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.operation {
+  background-color: #dddddd;
+}
+
+.input-text {
+  grid-column: 1 / -1;
+  cursor: auto;
+  text-align: right;
+  background-color: #ffffff;
 }
