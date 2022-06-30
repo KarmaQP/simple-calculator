@@ -78,3 +78,16 @@ h6 {
 }
 /*-------------------------------------------------------*/
 
+.container {
+  background-color: beige;
+  display: flex;
+  flex-direction: row;
+}
+
+.container__item {
+  background-color: aliceblue;
+  font-size: 40px;
+  width: 70px;
+  border: 1px solid black;
+  text-align: center;
+}

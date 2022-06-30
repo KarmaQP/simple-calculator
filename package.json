@@ -1,7 +1,7 @@
 {
-  "name": "forkify",
+  "name": "calculator",
   "version": "1.0.0",
-  "description": "Recipe application",
+  "description": "Calculator application",
   "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
